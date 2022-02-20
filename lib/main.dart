@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:ufa/screens/about.screen.dart';
 import 'package:ufa/screens/contact.screen.dart';
+import 'package:ufa/screens/posts.screen.dart';
 
 import 'screens/login.screen.dart';
 import 'screens/users.screen.dart';
@@ -35,6 +36,7 @@ class MyApp extends StatelessWidget {
         Routes.userShow: (context) => UsersShowScreen(),
         Routes.about: (context) => AboutScreen(),
         Routes.contact: (context) => ContactScreen(),
+        Routes.posts: (context) => PostsScreen(),
       },
     );
   }

@@ -22,11 +22,15 @@ class AppDrawer extends StatelessWidget {
             text: 'About',
             onTap: () => Navigator.pushReplacementNamed(context, Routes.about),
           ),
-
           _createDrawerItem(
             icon: Icons.contact_phone,
             text: 'Contacts',
             onTap: () => Navigator.pushReplacementNamed(context, Routes.contact),
+          ),
+          _createDrawerItem(
+            icon: Icons.newspaper_outlined,
+            text: 'Posts',
+            onTap: () => Navigator.pushReplacementNamed(context, Routes.posts),
           ),
           const Divider(),
           _createDrawerItem(
