@@ -7,6 +7,7 @@ import 'screens/login.screen.dart';
 import 'screens/users.screen.dart';
 import 'screens/users.show.screen.dart';
 import 'routes/Routes.dart';
+import 'widgets/AppThemeData.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -26,9 +27,7 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: AppThemeData().materialTheme,
       initialRoute: isAuth ? Routes.users : Routes.login,
       routes:  {
         Routes.login: (context) => LoginScreen(),
