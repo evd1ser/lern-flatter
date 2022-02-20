@@ -32,6 +32,11 @@ class AppDrawer extends StatelessWidget {
             text: 'Posts',
             onTap: () => Navigator.pushReplacementNamed(context, Routes.posts),
           ),
+          _createDrawerItem(
+            icon: Icons.add,
+            text: 'Counter',
+            onTap: () => Navigator.pushReplacementNamed(context, Routes.counter),
+          ),
           const Divider(),
           _createDrawerItem(
             icon: Icons.logout,

@@ -4,6 +4,7 @@ import 'package:ufa/screens/login.screen.dart';
 import 'package:ufa/screens/posts.screen.dart';
 import 'package:ufa/screens/users.screen.dart';
 import 'package:ufa/screens/users.show.screen.dart';
+import 'package:ufa/screens/counter.screen.dart';
 
 class Routes {
   static const String login = LoginScreen.routeName;
@@ -12,4 +13,5 @@ class Routes {
   static const String contact = ContactScreen.routeName;
   static const String about = AboutScreen.routeName;
   static const String posts = PostsScreen.routeName;
+  static const String counter = CounterScreen.routeName;
 }
