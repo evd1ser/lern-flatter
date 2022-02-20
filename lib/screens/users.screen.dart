@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:ufa/models/User.dart';
 import 'package:ufa/widgets/drawer.dart';
+import 'package:ufa/widgets/myAppBar.dart';
 import 'package:http/http.dart' as http;
 
 import '../components/userRow.dart';
@@ -43,9 +44,7 @@ class _UsersScreenState extends State<UsersScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Users"),
-      ),
+      appBar: setAppBar(context, "Users"),
       drawer: AppDrawer(),
       body: Center(
         child: FutureBuilder<UsersList>(

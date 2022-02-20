@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ufa/models/User.dart';
 import 'package:ufa/widgets/drawer.dart';
+
+import '../widgets/myAppBar.dart';
 
 class ContactScreen extends StatelessWidget {
   static const String routeName = '/contact';
@@ -10,9 +11,7 @@ class ContactScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Contact us"),
-      ),
+      appBar: setAppBar(context, "Contact us"),
       drawer: AppDrawer(),
       body: Container(
         width: double.infinity,

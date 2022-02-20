@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ufa/widgets/drawer.dart';
+import 'package:ufa/widgets/myAppBar.dart';
 
 class AboutScreen extends StatelessWidget {
   static const String routeName = '/about';
@@ -10,9 +11,7 @@ class AboutScreen extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("About app"),
-      ),
+      appBar: setAppBar(context, "About app"),
       drawer: AppDrawer(),
       body: Container(
         width: double.infinity,

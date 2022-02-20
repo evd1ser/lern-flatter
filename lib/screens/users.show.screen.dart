@@ -6,6 +6,7 @@ import 'package:ufa/models/Todo.dart';
 import 'package:ufa/models/User.dart';
 import 'package:ufa/widgets/drawer.dart';
 import 'package:http/http.dart' as http;
+import '../widgets/myAppBar.dart';
 
 class UsersShowScreen extends StatefulWidget {
   static const String routeName = '/users/single';
@@ -42,9 +43,7 @@ class _UsersShowScreenState extends State<UsersShowScreen> {
     final user = ModalRoute.of(context)!.settings.arguments as User;
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("User info"),
-      ),
+      appBar: setAppBar(context, "User info"),
       drawer: AppDrawer(),
       body: SingleChildScrollView(
         child: Container(
